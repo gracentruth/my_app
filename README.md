@@ -1,4 +1,4 @@
-# my_app
+# Flutter Study
 
 A new Flutter project.
 
