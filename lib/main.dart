@@ -3,45 +3,137 @@
 
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp()); //앱의 시작점,의  runApp: 플러터 최상위 위치 함수
-// runApp()의 argument로는 반드시 위젯이라는 요소가 들어가야한다.
-// MyApp() : 우리가 직접 만들어야하는 위젯 (Custom Widget), 최상위 위젯, 함수가 아닌 위젯이다 !
-
-//MyApp : 뼈대를 만든다, 정적이다
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp( // 이 위젯도 argument를 가져야한다. (title, theme, home)
-      title: 'First app', //앱을 총칭하는 이름
-      theme: ThemeData(
-        primarySwatch: Colors.blue
-      ),
-    home: MyHomePage(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'BBANTO', //앱을 총칭하는 이름
+    home: Grade(),
     );
   }
 }
 
-class  MyHomePage  extends StatelessWidget {
+class  Grade  extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.amber[800],
       appBar: AppBar(
-        title: Text('App Bar'),
+        title: Text('BBANTO'),
         centerTitle: true,
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.amber[700],
         elevation: 0.0,
       ),
-    body: Center(
-      child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text("Hello"),
-            Text("Hello"),
-            Text("Hello"),
+      body: Padding(
+        padding: EdgeInsets.fromLTRB(30.0, 40.0, 0.0, 0.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget> [
+            Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/profile.png'),
+                radius:60.0,
+              ),
+            ),
+            Divider(
+              height:60.0, //divider 위 아래 사이의 넓이
+              color:Colors.grey[850],
+              thickness: 0.5,
+              endIndent:30.0 ,
+            ),
+            Text('NAME',
+            style: TextStyle(
+              color: Colors.white,
+              letterSpacing:2.0,
+            ),
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Text('BBANTO',
+            style: TextStyle(
+              color:Colors.white ,
+              letterSpacing: 2.0,
+              fontSize:28.0,
+              fontWeight: FontWeight.bold
+            ),
+            ),
+            SizedBox(
+              height: 30.0,
+            ),
+            Text('BBANTO POWER LEVEL',
+              style: TextStyle(
+                color: Colors.white,
+                letterSpacing:2.0,
+              ),
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Text('14',
+              style: TextStyle(
+                  color:Colors.white ,
+                  letterSpacing: 2.0,
+                  fontSize:28.0,
+                  fontWeight: FontWeight.bold
+              ),
+            ),
+            SizedBox(
+              height: 30.0,
+            ),
+            Row(
+              children:  <Widget>[
+                Icon(Icons.check_circle_outline),
+                SizedBox(
+                  width: 10.0,
+                ),
+                Text('using ligthsaber',
+                style: TextStyle(
+                  fontSize: 16.0,
+                  letterSpacing: 1.0
+                )),
+              ],
+            ),
+            Row(
+              children:  <Widget>[
+                Icon(Icons.check_circle_outline),
+                SizedBox(
+                  width: 10.0,
+                ),
+                Text('face heror tatoo',
+                    style: TextStyle(
+                        fontSize: 16.0,
+                        letterSpacing: 1.0
+                    )),
+              ],
+            ),
+            Row(
+              children:  <Widget>[
+                Icon(Icons.check_circle_outline),
+                SizedBox(
+                  width: 10.0,
+                ),
+                Text('fire frames',
+                    style: TextStyle(
+                        fontSize: 16.0,
+                        letterSpacing: 1.0
+                    )),
+              ],
+            ),
+            Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/profile2.png'),
+                radius:40.0,  
+                backgroundColor: Colors.amber[800],
+              ),
+            ),
           ],
         ),
-    ),
+      ),
+
 
     );
   }
