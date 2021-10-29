@@ -13,12 +13,33 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp( // 이 위젯도 argument를 가져야한다. (title, theme, home)
-      title: 'First app',
+      title: 'First app', //앱을 총칭하는 이름
       theme: ThemeData(
         primarySwatch: Colors.blue
       ),
-   // home: MyHomePage(),
+    home: MyHomePage(),
     );
   }
 }
 
+class  MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('App Bar'),
+      ),
+      body:Center(
+        child: Column(
+          children:[
+            Text('Hello'),
+            Text('Hello2'),
+            Text('Hello3'),
+          ],
+        ),
+      ) ,
+    );
+  }
+}
+
+//MyApp과 MyHomePage는 custom widget, AppBar, Scapffold는 기존에 있는 위
