@@ -26,4 +26,5 @@ void main() => runApp(MyApp()); //앱의 시작점,의  runApp: 플러터 최상
 Column위젯 내에서 mainAxisAlignment 속성을 사용해야 한다. 
 
 ### 순한맛 강좌11 
-![Simulator Screen Shot - iPhone 12 mini - 2021-10-29 at 17 22 01](https://user-images.githubusercontent.com/63465350/139401645-d7415012-35ec-45b3-af42-75a96777984c.png)
+
+<img src="https://user-images.githubusercontent.com/63465350/139401645-d7415012-35ec-45b3-af42-75a96777984c.png" width="300">
