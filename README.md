@@ -4,7 +4,7 @@ A new Flutter project.
 
 
 
-## Meomo
+## Memo
 
 ### 순한맛 강좌7
 void main() => runApp(MyApp()); //앱의 시작점,의  runApp: 플러터 최상위 위치 함수
