@@ -28,3 +28,9 @@ Column위젯 내에서 mainAxisAlignment 속성을 사용해야 한다.
 ### 순한맛 강좌11 
 
 <img src="https://user-images.githubusercontent.com/63465350/139401645-d7415012-35ec-45b3-af42-75a96777984c.png" width="300">
+
+### 순한맛 강좌14 
+
+- leading: 아이콘 버튼이나 간단한 위젯을 왼쪽에 배치할 때 사용
+- actions: 복수의 아이콘 버튼 등을 오른쪽에 배치할 때 사용
+
