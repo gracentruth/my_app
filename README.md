@@ -34,3 +34,8 @@ Column위젯 내에서 mainAxisAlignment 속성을 사용해야 한다.
 - leading: 아이콘 버튼이나 간단한 위젯을 왼쪽에 배치할 때 사용
 - actions: 복수의 아이콘 버튼 등을 오른쪽에 배치할 때 사용
 
+
+### 조금매운맛 강좌2
+
+- 1.  stateful widget 
+: 2개의 클래스의 결합으로 이루어짐 
