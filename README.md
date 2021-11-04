@@ -27,7 +27,6 @@ Column위젯 내에서 mainAxisAlignment 속성을 사용해야 한다.
 
 ### 순한맛 강좌11 
 
-<img src="https://user-images.githubusercontent.com/63465350/139401645-d7415012-35ec-45b3-af42-75a96777984c.png" width="300">
 
 ### 순한맛 강좌14 
 
@@ -39,3 +38,7 @@ Column위젯 내에서 mainAxisAlignment 속성을 사용해야 한다.
 
 - 1.  stateful widget 
 : 2개의 클래스의 결합으로 이루어짐 
+
+<img src="https://user-images.githubusercontent.com/63465350/140270085-8edf9136-9790-4939-8ca4-37c60f70937e.jpeg" height="600">
+
+
