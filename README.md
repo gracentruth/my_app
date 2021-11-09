@@ -34,6 +34,11 @@ Column위젯 내에서 mainAxisAlignment 속성을 사용해야 한다.
 - leading: 아이콘 버튼이나 간단한 위젯을 왼쪽에 배치할 때 사용
 - actions: 복수의 아이콘 버튼 등을 오른쪽에 배치할 때 사용
 
+## 순한맛 강좌15 : Drawer 
+- ListView: 스크롤 가능한 항목의 선형 목록 
+- ListTile: ListView의 목록 하나하나 
+
+
 
 ### 조금매운맛 강좌2
 

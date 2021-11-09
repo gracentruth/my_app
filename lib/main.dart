@@ -2,12 +2,6 @@ import 'package:flutter/material.dart' ;
 
 void main()=> runApp(MyApp());
 
-
-
-
-
-
-
 class MyApp extends StatefulWidget {
   @override
   State<StatefulWidget> createState(){
@@ -17,7 +11,6 @@ class MyApp extends StatefulWidget {
 
 class MyAppState extends State<MyApp> {
 
-  int count=0;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,12 +23,7 @@ class MyAppState extends State<MyApp> {
           title: Text('Appbar icon menu'),
           centerTitle: true,
           elevation:0.0,
-          leading:IconButton(
-            icon: Icon(Icons.menu),
-            onPressed: () {
-              print('menu button is clicked ');
-            },
-          ),
+
           //leading: 간단한 위젯이나 타이틀을 왼쪽에 위치시키는 기능을 한
           actions:<Widget>[
             IconButton(
@@ -50,31 +38,37 @@ class MyAppState extends State<MyApp> {
                 print('search button is clicked ');
               },
             ),
-
           ],
         ),
-        body: Center(
-          child:Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text('numbers of click'),
-              Text('$count',
-                style:Theme.of(context).textTheme.headline4,
-              ),
-
+        drawer:Drawer(
+          child: ListView(
+            padding: EdgeInsets.zero,
+            children:<Widget>[
+              UserAccountsDrawerHeader(
+                currentAccountPicture: CircleAvatar(
+                  backgroundImage: AssetImage('assets/profile.png'),
+                  backgroundColor: Colors.white,
+                ),
+                accountEmail: Text('21900174@handong.edu'),
+                accountName:Text('Eunjin') ,
+                onDetailsPressed:(){
+                  print('hello');
+                },
+                decoration: BoxDecoration(
+                  color: Colors.red[200],
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(40),
+                    bottomRight: Radius.circular(40),
+                  ),
+                ),
+                )
             ],
 
           ),
-        ),
-        floatingActionButton: FloatingActionButton(
-            child: Icon(Icons.add),
-            onPressed: (){
-              setState(() {
-                count++;
-                print('$count');
-              });
 
-            }),
+        ),
+
+
 
       ),
     );
