@@ -49,6 +49,17 @@ class MyAppState extends State<MyApp> {
                   backgroundImage: AssetImage('assets/profile.png'),
                   backgroundColor: Colors.white,
                 ),
+                otherAccountsPictures: [
+                  CircleAvatar(
+                    backgroundImage: AssetImage('assets/profile2.png'),
+                    backgroundColor: Colors.white,
+                  ),
+                  // CircleAvatar(
+                  //   backgroundImage: AssetImage('assets/profile2.png'),
+                  //   backgroundColor: Colors.white,
+                  // ),
+
+                ],
                 accountEmail: Text('21900174@handong.edu'),
                 accountName:Text('Eunjin') ,
                 onDetailsPressed:(){
@@ -61,9 +72,40 @@ class MyAppState extends State<MyApp> {
                     bottomRight: Radius.circular(40),
                   ),
                 ),
-                )
-            ],
+                ),
+              ListTile(
+               leading:Icon(Icons.home,
+               color: Colors.grey[850],) ,
+                title: Text('Home'),
+                onTap: (){
+                 print('home is clicked');
+                },
+                trailing:Icon(Icons.add,
+                  color: Colors.grey[850],),
+              ),
+              ListTile(
+                leading:Icon(Icons.settings,
+                  color: Colors.grey[850],) ,
+                title: Text('Setting'),
+                onTap: (){
+                  print('setting is clicked');
+                },
+                trailing:Icon(Icons.add,
+                  color: Colors.grey[850],),
+              ),
+              ListTile(
+                leading:Icon(Icons.question_answer,
+                  color: Colors.grey[850],) ,
+                title: Text('Q&A'),
+                onTap: (){
+                  print('Q&A is clicked');
+                },
+                trailing:Icon(Icons.add,
+                  color: Colors.grey[850],),
+              ),
 
+
+            ],
           ),
 
         ),
