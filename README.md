@@ -38,6 +38,9 @@ Column위젯 내에서 mainAxisAlignment 속성을 사용해야 한다.
 - ListView: 스크롤 가능한 항목의 선형 목록 
 - ListTile: ListView의 목록 하나하나 
 
+## 순한맛 강좌 18 
+- Scaffold.of(context)
+: 현재 주어진 context에서 위로 올라가면서 가장 가까운 Scaffold를 찾아서 반환하는 함수 
 
 
 ### 조금매운맛 강좌2
