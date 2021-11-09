@@ -8,11 +8,11 @@ class MyApp extends StatefulWidget {
     return MyAppState();
 }
 }
-
 class MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+    print(context); //lesson17
     return MaterialApp(
       title: 'Appbar',
       theme: ThemeData(
